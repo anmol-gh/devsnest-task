@@ -18,6 +18,9 @@ app.post('/fetchResult', (req, res) => {
     // res.send(`received ${word} `)
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
 
 app.listen(8000, () => { console.log('Server is running on 8000') });
