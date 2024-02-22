@@ -10,9 +10,11 @@ const Body = () => {
 	};
 	// Request to backend
 	async function sendRequest() {
-		axios.post("http://localhost:8000/fetchResult", { word }).then((res) => {
-			console.log(res.data);
-		});
+		axios
+			.post("https://devsnest-task.onrender.com//fetchResult", { word })
+			.then((res) => {
+				console.log(res.data);
+			});
 	}
 
 	return (
