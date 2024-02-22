@@ -4,6 +4,7 @@ import express from 'express';
 const app = express();
 app.use(cors());
 app.use(express.json());
+const port = process.env.PORT || 8080;
 
 
 app.post('/fetchResult', (req, res) => {
@@ -23,4 +24,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(8000, () => { console.log('Server is running on 8000') });
+app.listen(port, () => { console.log('Server is running on 8000') });
